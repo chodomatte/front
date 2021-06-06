@@ -1,0 +1,155 @@
+body {
+            color: #555;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            font-weight: normal;
+            line-height: 1.5em;
+            /* 顺序：font: font-style(加了下划线？还是加啥) font-weight font-size/line-height font-family; */
+            /* 不需要设置的属性可以省略，但是 font-size 和 font-family必须保留; */
+            font: normal 16px Arial, Helvatica, sans-serif;
+}
+
+button {
+    background-color: #444;
+    color: #fff; 
+    padding: 10px 15px;
+}
+
+button:hover {
+    background-color: indianred;
+}
+
+button:active {
+    background-color: ivory;
+}
+
+a {
+    text-decoration: none;
+    color: #555;
+}
+
+a:hover {
+    color: cyan;
+}
+
+a:visited {
+    color: red;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.container {
+    width: 70%;
+    margin: auto;
+}
+.box1 {
+
+    background-color: sandybrown;
+    border-top: 8px skyblue solid;
+    border-right: 10px rebeccapurple solid;
+    border-bottom: 5px pink solid;
+    border-left: 5px greenyellow solid;
+    border-bottom-width: 8px;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    margin-top: 60px;
+}
+
+.box1 h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 800;
+    font-style: italic;
+    text-align: center;
+    text-decoration: underline;
+    letter-spacing: 1em;
+    word-spacing: 2em;
+
+}
+.box2 {
+    margin: 20px 0px;
+    border: 5px dotted #ccc;
+    border-radius:15px;
+    padding: 20px;
+    position: relative;
+    top: 300px;
+    left: 30px;
+
+}
+
+.box2 h1 {
+    text-align: center;
+
+}
+
+.list li {
+    background-color: hotpink;
+    /* first method */
+    list-style-image: url(../images/240px-Yes_Check_Circle.svg.png);
+    /* second method */
+    /* 默认为圆点，square为方点 */
+    /* list-style: square; */
+    
+}
+
+.block {
+    float: left;
+    width: 33.3%;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+#main-block {
+    float: left;
+    width: 70%;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+#sidebar {
+    float: right;  
+    width: 30%;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.list2 li:nth-child(even) {
+    background-color: greenyellow;
+}
+
+.list2 li:first-child {
+    background-color: red;
+}
+
+.list2 li:nth-child(3) {
+    color: aqua;
+}
+
+.position-box {
+    width: 500px;
+    height: 500px;
+    border: 1px solid black;
+    position: relative;
+
+}
+
+.position-box h1 {
+    position: absolute;
+    top: 50px
+}
+
+.position-box h2 {
+    position: absolute;
+    right: 30px;
+}
+
+#fixed {
+    position: fixed;   
+    right: 0;
+    top: 0;
+}
